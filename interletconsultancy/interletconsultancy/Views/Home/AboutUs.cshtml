@@ -1,0 +1,194 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    .custom-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @@media all and (min-width: 576px) {
+        .custom-container {
+            width: 540px;
+        }
+    }
+
+    @@media all and (min-width: 768px) {
+        .custom-container {
+            width: 750px;
+        }
+    }
+
+    @@media all and (min-width: 992px) {
+        .custom-container {
+            width: 970px;
+        }
+    }
+
+    @@media all and (min-width: 1200px) {
+        .custom-container {
+            width: 1040px;
+        }
+    }
+
+    /* Custom break point*/
+
+    @@media all and (min-width: 1600px) {
+        .custom-container {
+            width: 1400px;
+        }
+    }
+
+    @@media all and (min-width: 1800px) {
+        .custom-container {
+            width: 1600px;
+        }
+    }
+
+
+    #slider {
+        overflow: hidden;
+    }
+
+        #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+
+            #slider figure img {
+                width: 20%;
+                float: left;
+            }
+
+    @@keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+
+    .container-full {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .background-color-fff {
+        background-color: #fff;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .font-bold {
+        font-family: DINNextLTPro-Bold !important;
+    }
+
+    .title-text > h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+    }
+
+    .h3, h3 {
+        font-size: 1.75rem;
+    }
+
+    .margin-top-3-percent {
+        margin-top: 3%;
+    }
+
+
+</style>
+
+<div class="container-fluid">
+    <div id="slider">
+        <figure>
+            <img src="~/images/it1.jpg">
+            <img src="~/images/it1.jpg">
+            <img src="~/images/it1.jpg">
+            <img src="~/images/it1.jpg">
+            <img src="~/images/it1.jpg">
+        </figure>
+    </div>
+</div>
+
+<div class="container-fluid text-center">
+    <div class="row m-5">
+        <div class="col">
+            <h3 style="text-align:center;font-weight:bold"> Clients around the world count on us to guide them through digital complexities and disruptions. </h3>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p style="text-align:center"> Interlet Consultancy is a proven technology and consulting partner that delivers personalized, high-value solutions to accelerate business growth. With nearly 500 technology and business consultants and offices on three continents, Interlet Consultancy empowers organizations to unlock the power of enterprise data, uncover new opportunities and create innovative, operational cultures that help companies thrive. </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p style="text-align:center">
+                Our comprehensive suite of managed services supports the entire technology ecosystem, including hyper care, training, and support. We have five core practice areas including Salesforce, data analytics, digital experience, engineering, and automation.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+@*<div class="container-full background-color-fff our-people-opening-text-container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+            <h3 class="font-bold">Clients around the world count on us to guide them through digital complexities and disruptions. </h3>
+            <h5 class="margin-top-3-percent">Saggezza is a proven technology and consulting partner that delivers personalized, high-value solutions to accelerate business growth. With nearly 500 technology and business consultants and offices on three continents, Saggezza empowers organizations to unlock the power of enterprise data, uncover new opportunities and create innovative, operational cultures that help companies thrive.  </h5>
+
+            <h5 class="margin-top-3-percent">
+                Our comprehensive suite of managed services supports the entire technology ecosystem, including hyper care, training, and support. We have five core practice areas including Salesforce, data analytics, digital experience, engineering, and automation.
+            </h5>
+        </div>
+    </div>
+    <br>
+    <div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://engage.saggezza.com/l/882653/2021-09-09/23cxc/882653/1631212759kIWwLcQZ/About_Saggezza_1_Pager.pdf">Download About Us PDF</a></div>
+
+</div>*@
+

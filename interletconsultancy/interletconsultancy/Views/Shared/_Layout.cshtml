@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Interlet Consultancy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-toggle").dropdown();
+        });
+    </script>
+    <style>
+        .navbar-nav .dropdown-menu {
+            position: absolute;
+        }
+
+        .dropdown-menu {
+            position: relative;
+            left: 14%; /*or accroding to the dimension */
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Interlet Consultancy</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                        </li>
+                        @*<li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>*@
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="z-index: 1001">
+                                <a class="dropdown-item">
+                                    Strategy & Innovation
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Data & Analytics
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Salesforce
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Digital Experience
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Engineering
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Automation
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SuccessStory">Success Story</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Careers
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="z-index: 1001">
+                                <a class="dropdown-item text-dark">
+                                    Explore Jobs
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    @*<div class="container" >
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>*@
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - Interlet Consultancy - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>*@
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid my-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white"
+                style="background-color: #3e4551">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">FOOTER CONTENT</h5>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae modi cum ipsam ad, illo possimus laborum ut
+                                reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+                                Reiciendis assumenda iusto sapiente inventore animi?
+                            </p>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Links</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Links</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Links</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Links</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+                @*<hr class="mb-4" />*@
+
+                <!-- Section: CTA -->
+                @*<section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="me-3">Register for free</span>
+                        <button type="button" class="btn btn-outline-light btn-rounded">
+                            Sign up!
+                        </button>
+                    </p>
+                </section>*@
+                <!-- Section: CTA -->
+
+                <hr class="mb-4" />
+
+                <!-- Section: Social media -->
+                <section class="mb-4 text-center">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                       href="#!"
+                       role="button">
+                        @*<i class="fab fa-facebook-f"></i>*@
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                       href="#!"
+                       role="button">
+                        @*<i class="fab fa-twitter"></i>*@
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                       href="#!"
+                       role="button">
+                        @*<i class="fab fa-google"></i>*@
+                        <i class="fa fa-google"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                       href="#!"
+                       role="button">
+                        @*<i class="fab fa-instagram"></i>*@
+                        <i class="fa fa-instagram"></i>
+                    </a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                       href="#!"
+                       role="button">
+                        @*<i class="fab fa-linkedin-in"></i>*@
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                    <!-- Github -->
+                    @*<a class="btn btn-outline-light btn-floating m-1"
+                       href="#!"
+                       role="button">
+                        <i class="fab fa-github"></i>
+                    </a>*@
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center p-3"
+                 style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2021 Copyright:
+                <a class="text-white" href="#">Interlet Consultancy</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

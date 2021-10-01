@@ -1,0 +1,121 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+    .custom-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @@media all and (min-width: 576px) {
+        .custom-container {
+            width: 540px;
+        }
+    }
+
+    @@media all and (min-width: 768px) {
+        .custom-container {
+            width: 750px;
+        }
+    }
+
+    @@media all and (min-width: 992px) {
+        .custom-container {
+            width: 970px;
+        }
+    }
+
+    @@media all and (min-width: 1200px) {
+        .custom-container {
+            width: 1040px;
+        }
+    }
+
+    /* Custom break point*/
+
+    @@media all and (min-width: 1600px) {
+        .custom-container {
+            width: 1400px;
+        }
+    }
+
+    @@media all and (min-width: 1800px) {
+        .custom-container {
+            width: 1600px;
+        }
+    }
+
+
+    #slider {
+        overflow: hidden;
+    }
+
+        #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+
+            #slider figure img {
+                width: 20%;
+                float: left;
+            }
+
+    @@keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+</style>
+
+<div class="custom-container">
+    <div id="slider">
+        <figure>
+            <img src="~/images/banner6.jpg">
+            <img src="~/images/banner6.jpg">
+            <img src="~/images/banner6.jpg">
+            <img src="~/images/banner6.jpg">
+            <img src="~/images/banner6.jpg">
+        </figure>
+    </div>
+</div>

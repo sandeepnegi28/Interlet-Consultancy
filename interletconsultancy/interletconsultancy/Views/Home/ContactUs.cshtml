@@ -1,0 +1,225 @@
+﻿
+<style>
+    .custom-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @@media all and (min-width: 576px) {
+        .custom-container {
+            width: 540px;
+        }
+    }
+
+    @@media all and (min-width: 768px) {
+        .custom-container {
+            width: 750px;
+        }
+    }
+
+    @@media all and (min-width: 992px) {
+        .custom-container {
+            width: 970px;
+        }
+    }
+
+    @@media all and (min-width: 1200px) {
+        .custom-container {
+            width: 1040px;
+        }
+    }
+
+    /* Custom break point*/
+
+    @@media all and (min-width: 1600px) {
+        .custom-container {
+            width: 1400px;
+        }
+    }
+
+    @@media all and (min-width: 1800px) {
+        .custom-container {
+            width: 1600px;
+        }
+    }
+
+
+    #slider {
+        overflow: hidden;
+    }
+
+        #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+
+            #slider figure img {
+                width: 20%;
+                float: left;
+            }
+
+    @@keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+</style>
+
+@*<div class="custom-container">
+    <div id="slider">
+        <figure>
+            <img src="~/images/banner6.jpg">
+            <img src="~/images/banner6.jpg">
+            <img src="~/images/banner6.jpg">
+            <img src="~/images/banner6.jpg">
+            <img src="~/images/banner6.jpg">
+        </figure>
+    </div>
+</div>*@
+
+@*<div class="container">  
+    
+            <img src="~/images/contactUs.jpg">
+</div>*@
+<div class="custom-container">
+    <header>
+        <img src="~/images/contactUs.jpg" style="width: 100%; height: auto;">
+    </header>
+</div>
+<div class="container">
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">
+            Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.
+        </p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fa fa-map-marker-alt fa-2x"></i>
+                        <p>San Francisco, CA 94126, USA</p>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-phone mt-4 fa-2x"></i>
+                        <p>+ 01 234 567 89</p>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-envelope mt-4 fa-2x"></i>
+                        <p>contact@interletconsultancy.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+    </section>
+    <!--Section: Contact v.2-->
+</div>

@@ -1,0 +1,326 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+
+    /*Custome Container*/
+
+    .custom-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @@media all and (min-width: 576px) {
+        .custom-container {
+            width: 540px;
+        }
+    }
+
+    @@media all and (min-width: 768px) {
+        .custom-container {
+            width: 750px;
+        }
+    }
+
+    @@media all and (min-width: 992px) {
+        .custom-container {
+            width: 970px;
+        }
+    }
+
+    @@media all and (min-width: 1200px) {
+        .custom-container {
+            width: 1040px;
+        }
+    }
+
+    /* Custom break point*/
+
+    @@media all and (min-width: 1600px) {
+        .custom-container {
+            width: 1400px;
+        }
+    }
+
+    @@media all and (min-width: 1800px) {
+        .custom-container {
+            width: 1600px;
+        }
+    }
+
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .carousel-inner {
+        overflow: visible !important;
+    }
+
+
+
+
+    .practice-areas-block .purple .img {
+        background: purple;
+    }
+
+    .practice-areas-block .blue .img {
+        background: #00adff;
+    }
+
+    .practice-areas-block .orange .img {
+        background: #e98200;
+    }
+
+    .practice-areas-block .red .img {
+        background: red;
+    }
+    .practice-areas-block .teal .img {
+        background: teal;
+    }
+    .practice-areas-block .green .img {
+        background: green;
+    }
+
+    .practice-areas-block {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+        .practice-areas-block .col-xs-12 {
+            margin-top: 20px;
+        }
+
+        .practice-areas-block .box {
+            background: #fff;
+            min-height: 350px;
+            position: relative;
+            height: 100%;
+            padding-bottom: 90px;
+            box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+        }
+
+
+
+        .practice-areas-block .img {
+            height: 120px;
+            width: 100%;
+        }
+
+
+            .practice-areas-block .img img {
+                max-width: 50%;
+                max-height: 90%;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+        .practice-areas-block h3 {
+            padding: 20px 15px 0;
+            font-family: DINNextW01-Bold;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+
+        .practice-areas-block .button {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            margin: 0 auto;
+            max-width: 90%;
+            transform: translateX(-50%);
+            min-width: 158px;
+        }
+
+    .button {
+        background: #000;
+        display: inline-block;
+        min-height: 55px;
+        padding: 17px 19px 12px;
+        min-width: 155px;
+        border: 1px solid #000;
+        font-family: DINNextW01-Bold;
+    }
+
+    .button, .home-banner-content p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .button, .color-fff {
+        color: #fff;
+    }
+
+
+
+
+    .lazyloaded {
+        opacity: 1;
+        transition: opacity 400ms;
+        transition-delay: 0ms;
+    }
+
+
+
+    img {
+        border-style: none;
+    }
+
+
+    #slider {
+        overflow: hidden;
+    }
+
+        #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+
+            #slider figure img {
+                width: 20%;
+                float: left;
+            }
+
+    @@keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+</style>
+
+<div class="custom-container">
+    <div id="slider">
+        <figure>
+            <img src="~/images/it1.jpg">
+            <img src="~/images/it1.jpg">
+            <img src="~/images/it1.jpg">
+            <img src="~/images/it1.jpg">
+            <img src="~/images/it1.jpg">
+        </figure>
+    </div>
+</div>
+
+@*image block*@
+
+<div class="container practice-areas-block background-color-fff">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-4 purple">
+            <div class="box">
+                <div class="img">
+                    @*<img alt="" data-src="https://www.saggezza.com/wp-content/uploads/2020/07/icon-pa-2.png" class=" lazyloaded" src="https://www.saggezza.com/wp-content/uploads/2020/07/icon-pa-2.png"><noscript><img src="https://www.saggezza.com/wp-content/uploads/2020/07/icon-pa-2.png" alt=""></noscript>*@
+                    <img alt="" data-src="~/icons/icon-pa-1.png" class=" ls-is-cached lazyloaded" src="~/icons/icon-pa-1.png"><noscript><img src="~/icons/icon-pa-1.png" alt=""></noscript>
+                </div>
+                <h3>Strategy &amp; Innovation</h3>
+                <p>Create business value by revealing opportunities and areas of optimization to drive innovation for the future state.</p>
+                <a href="/strategy-and-innovation/" title="" class="button">Learn more</a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-4 blue">
+            <div class="box">
+                <div class="img">
+                    <img alt="" data-src="~/icons/icon-pa-2.png" class=" lazyloaded" src="~/icons/icon-pa-2.png"><noscript><img src="~/icons/icon-pa-2.png" alt=""></noscript>
+                </div>
+                <h3>Salesforce</h3>
+                <p>Manage relationships and streamline business processes to improve your customer’s experience at each point of interaction.</p>
+                <a href="/salesforce/" title="" class="button">Learn more</a>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-lg-4 orange">
+            <div class="box">
+                <div class="img">
+                    <img alt="" data-src="~/icons/icon-pa-3.png" class=" lazyloaded" src="~/icons/icon-pa-3.png"><noscript><img src="~/icons/icon-pa-3.png" alt=""></noscript>
+                </div>
+                <h3>Data &amp; Analytics</h3>
+                <p>Prepare for the future, reduce risk, inform decisions, and create advantages by transforming into an intelligent, data-driven organization.</p>
+                <a href="/data-and-analytics/" title="" class="button">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container practice-areas-block background-color-fff">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-4 red">
+            <div class="box">
+                <div class="img">
+                    <img alt="" data-src="~/icons/icon-pa-4.png" class=" ls-is-cached lazyloaded" src="~/icons/icon-pa-4.png"><noscript><img src="~/icons/icon-pa-4.png" alt=""></noscript>
+                </div>
+                <h3>Strategy &amp; Innovation</h3>
+                <p>Create business value by revealing opportunities and areas of optimization to drive innovation for the future state.</p>
+                <a href="/strategy-and-innovation/" title="" class="button">Learn more</a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-4 teal">
+            <div class="box">
+                <div class="img">
+                    <img alt="" data-src="~/icons/icon-pa-5.png" class=" ls-is-cached lazyloaded" src="~/icons/icon-pa-5.png"><noscript><img src="~/icons/icon-pa-5.png" alt=""></noscript>
+                </div>
+                <h3>Strategy &amp; Innovation</h3>
+                <p>Create business value by revealing opportunities and areas of optimization to drive innovation for the future state.</p>
+                <a href="/strategy-and-innovation/" title="" class="button">Learn more</a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-4 green">
+            <div class="box">
+                <div class="img">
+                    <img alt="" data-src="~/icons/icon-pa-6.png" class=" ls-is-cached lazyloaded" src="~/icons/icon-pa-6.png"><noscript><img src="~/icons/icon-pa-6.png" alt=""></noscript>
+                </div>
+                <h3>Strategy &amp; Innovation</h3>
+                <p>Create business value by revealing opportunities and areas of optimization to drive innovation for the future state.</p>
+                <a href="/strategy-and-innovation/" title="" class="button">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
